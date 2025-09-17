@@ -1,0 +1,47 @@
+    body {
+        background-color: #eea382;
+        background-image: url("squid.png");
+        background-repeat: repeat;      
+        background-position: left top;
+        background-size: 500px 500px;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        min-height: 100vh;
+        padding-top: 250px;
+        padding-bottom: 0; 
+    }
+  
+    .ToDoList {
+        background-color: hsl(62, 100%, 93%);
+        width: 400px;
+        min-height: 400px;
+        padding: 20px;
+        margin: 20px auto; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+    }
+
+    .taskList li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .taskList li::before {
+        content: ":: "; 
+        color: #666;     
+        font-weight: bold;
+        margin-right: 5px; 
+      }
+
+    .taskList li::first-child {
+        padding-top: 10px;
+    }
+
+    .TaskButtons {
+        margin-left: auto;
+    }
